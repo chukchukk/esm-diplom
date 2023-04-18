@@ -90,81 +90,6 @@
           "type": "date"
         },
         {
-          "label": "Срок доставки с",
-          "key": "deliveryTimeFrom",
-          "type": "dateTime"
-        },
-        {
-          "label": "Срок доставки по",
-          "key": "deliveryTimeOn",
-          "type": "dateTime"
-        },
-        {
-          "label": "Тип доставки",
-          "key": "deliveryType",
-          "type": "input"
-        },
-        {
-          "label": "Вид посылки",
-          "key": "parcelType",
-          "type": "input"
-        },
-        {
-          "label": "Организация получатель",
-          "key": "organization",
-          "type": "input"
-        },
-        {
-          "label": "Часы работы организации",
-          "key": "openingHours",
-          "type": "input"
-        },
-        {
-          "label": "Контактное лицо",
-          "key": "contactPerson",
-          "type": "input"
-        },
-        {
-          "label": "Контактный номер телефон",
-          "key": "contactNumber",
-          "type": "input"
-        },
-        {
-          "label": "Код проекта",
-          "key": "projectCode",
-          "type": "input"
-        },
-        {
-          "label": "Требуется скан подписи",
-          "key": "requiredScan",
-          "type": "input"
-        },
-        {
-          "label": "Посылка тяжелая",
-          "key": "heavyPackage",
-          "type": "input"
-        },
-        {
-          "label": "Нужна доверенность",
-          "key": "needPowerOfAttorney",
-          "type": "input"
-        },
-        {
-          "label": "Нужен пропуск",
-          "key": "needPass",
-          "type": "input"
-        },
-        {
-          "label": "Требуется подписание документов",
-          "key": "requiredSigning",
-          "type": "input"
-        },
-        {
-          "label": "Срочная доставка",
-          "key": "expressDelivery",
-          "type": "input"
-        },
-        {
           "label": "Смена СНИЛС",
           "key": "changeSnils",
           "type": "input"
@@ -213,26 +138,6 @@
           "label": "Номер телефона",
           "key": "newPhoneNumber",
           "type": "input"
-        },
-        {
-          "label": "Назначенный сотрудник",
-          "key": "fullUserName",
-          "type": "input"
-        },
-        {
-          "label": "Обоснование предоставления доступа к заявке",
-          "key": "justification",
-          "type": "input"
-        },
-        {
-          "label": "Согласовано руководителем",
-          "key": "agreedByTheHead",
-          "type": "input"
-        },
-        {
-          "label": "Руководитель",
-          "key": "supervisor",
-          "type": "input"
         }
       ]
     }
@@ -244,126 +149,6 @@
     },
     "layout": {
       "rows": [
-        {
-          "cols": [
-            {
-              "fieldKey": "expressDelivery",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "requiredSigning",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "needPass",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "needPowerOfAttorney",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "heavyPackage",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "requiredScan",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "projectCode",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "contactNumber",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "contactPerson",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "openingHours",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "organization",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "parcelType",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "deliveryType",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "deliveryTimeOn",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "deliveryTimeFrom",
-              "span": 12
-            }
-          ]
-        },
         {
           "cols": [
           ]
@@ -564,38 +349,6 @@
           "cols": [
             {
               "fieldKey": "newPhoneNumber",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "fullUserName",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "justification",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "agreedByTheHead",
-              "span": 12
-            }
-          ]
-        },
-        {
-          "cols": [
-            {
-              "fieldKey": "supervisor",
               "span": 12
             }
           ]
