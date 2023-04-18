@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+
+.inputInstance {
+    color: $color-dark;
+    font-family: pfdisplay-Light;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    border: none;
+    padding: 0;
+    width: 100%;
+&::placeholder {
+     font-family: pfdisplay-Light;
+     font-size: 14px;
+     line-height: 1;
+     letter-spacing: 0.3px;
+     color: $color-grey-blue;
+ }
+
+&:disabled {
+     color: $color-pale-grey;
+&::placeholder {
+     color: $color-pale-grey;
+ }
+}
+}

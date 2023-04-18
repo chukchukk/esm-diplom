@@ -1,0 +1,24 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"
+                   logicalFilePath="db/changelog/0001100_shedlock_init.xml">
+
+    <changeSet id="init shedlock table" author="dponomarev">
+        <createTable tableName="SHEDLOCK">
+            <column name="NAME" type="VARCHAR(64)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="LOCK_UNTIL" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LOCKED_AT" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LOCKED_BY" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

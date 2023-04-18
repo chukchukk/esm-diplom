@@ -1,0 +1,52 @@
+{
+  "name": "addFilesToRequest",
+  "title": "Прикрепление файла",
+  "type": "Form",
+  "bc": "addFileToRequest",
+  "fields": [
+    {
+      "label": "newFileId",
+      "key": "newFileId",
+      "type": "hidden"
+    },
+    {
+      "label": "Документ",
+      "key": "newFileName",
+      "type": "fileUpload",
+      "fileIdKey": "newFileId"
+    },
+    {
+      "label": "Комментарий",
+      "key": "newFileComment",
+      "type": "text"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "saveFile",
+        "cancelAddingFile"
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "newFileName",
+              "span": 24
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "newFileComment",
+              "span": 24
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

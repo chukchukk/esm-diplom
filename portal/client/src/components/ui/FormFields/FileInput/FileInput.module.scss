@@ -1,0 +1,54 @@
+@import "../../../../assets/fonts/fonts.module.scss";
+@import "../../../../styles/variables.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tagsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px
+}
+
+.self {
+  display: none;
+}
+
+.fileTag {
+  margin-top: -4px;
+  color: $color-dark;
+  font-family: pfdisplay-Light;
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  padding: 0 5px;
+  background-color: $color-pale_grey_two;
+}
+.icon {
+  cursor: pointer;
+  margin-top: -2px;
+}
+.disabled {
+  cursor: not-allowed;
+}
+.placeholder {
+  color: $color-grey-blue;
+  font-family: pfdisplay-Light;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+.pale {
+  color: $color-pale-grey;
+}
+
+.deleteBtn {
+  margin-left: 5px;
+}

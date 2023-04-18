@@ -1,0 +1,31 @@
+{
+  "name": "addReasonFormCancelRequest",
+  "title": "Отмена заявки",
+  "type": "FormPopup",
+  "bc": "addCancelCommentForm",
+  "fields": [
+    {
+      "label": "Причина отмены",
+      "key": "cancelComment",
+      "type": "text"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "cancelComment",
+              "span": 24
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

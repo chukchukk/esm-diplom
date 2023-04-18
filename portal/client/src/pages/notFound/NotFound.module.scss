@@ -1,0 +1,45 @@
+@import "../../assets/fonts/fonts.module.scss";
+@import "../../styles/variables.scss";
+
+.NotFound {
+  min-width: 100%;
+  background-image: url("../../assets/images/Vector.png");
+  background-size: cover;
+  overflow-y: hidden;
+  min-height: calc(100vh - (80px));
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.info {
+  margin-top: 150px;
+  width: 489px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.description {
+  font-size: 23px;
+  margin-top: 20px;
+}
+
+.btn {
+  margin-top: 40px;
+  padding: 0;
+}
+
+.image {
+  margin-top: 54px;
+}
+
+.img {
+  width: 690px;
+}

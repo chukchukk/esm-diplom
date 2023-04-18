@@ -1,0 +1,29 @@
+@import '../../../assets/fonts/fonts.module.scss';
+@import '../../../styles/variables.scss';
+
+.formInstance {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+
+    max-width: 426px;
+    margin-bottom: 44px;
+}
+
+.periodContainer {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 15px;
+    p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        font-family: pfdisplay-Medium;
+        color: $color-grey-blue;
+        display: block;
+    }
+    div:nth-of-type(2) span {
+        display: none;
+    }
+}

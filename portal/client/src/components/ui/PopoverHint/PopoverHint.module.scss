@@ -1,0 +1,18 @@
+
+.root {
+  height: 24px;
+  width: 24px;
+  &:before {
+    content: url("../../../assets/icons/help.svg");
+  }
+  &:hover:before {
+    content: url("../../../assets/icons/helpBlue.svg");
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  &:before {
+  content: url("../../../assets/icons/helpPale.svg");
+  }
+}

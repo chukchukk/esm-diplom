@@ -1,0 +1,9 @@
+{
+  "name": "FirstLevelNavigationTabs",
+  "title": "",
+  "type": "ViewNavigation",
+  "fields": [],
+  "options": {
+    "navigationLevel": 1
+  }
+}

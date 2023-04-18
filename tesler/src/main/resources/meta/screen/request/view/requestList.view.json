@@ -1,0 +1,74 @@
+{
+  "name": "requestList",
+  "title": "Все заявки",
+  "template": "DashboardView",
+  "url": "/screen/requests/view/requestList",
+  "widgets": [
+    {
+      "widgetName": "FirstLevelNavigationTabs",
+      "position": 0,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestListHeader",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestList",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "addCommentFormRequestList",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "addReasonFormCancelRequestList",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "completeRequestList",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "completeWithFileRequestList",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "rejectRequestList",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "needExtraInfoRequestList",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "solutionDeadlineChangeRequestList",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "implementerPickListPopupRequestList",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    }
+  ],
+  "rolesAllowed": [
+    "HEAD_IMPLEMENTER","IMPLEMENTER"
+  ]
+}

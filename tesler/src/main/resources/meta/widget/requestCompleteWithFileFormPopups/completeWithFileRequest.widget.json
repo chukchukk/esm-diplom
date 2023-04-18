@@ -1,0 +1,46 @@
+{
+  "name": "completeWithFileRequest",
+  "title": "Выполнение заявки",
+  "type": "FormPopup",
+  "bc": "completeWithFileRequest",
+  "fields": [
+    {
+      "label": "fileId",
+      "key": "fileId",
+      "type": "hidden"
+    },
+    {
+      "label": "Документ",
+      "key": "fileName",
+      "type": "fileUpload",
+      "fileIdKey": "fileId"
+    },
+    {
+      "label": "Комментарий",
+      "key": "completeComment",
+      "type": "text"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "fileName",
+              "span": 24
+            },
+            {
+              "fieldKey": "completeComment",
+              "span": 24
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

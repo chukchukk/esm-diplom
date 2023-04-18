@@ -1,0 +1,12 @@
+@import "../../../assets/fonts/fonts.module.scss";
+@import "../../../styles/variables.scss";
+.self{
+  padding: 29px 93px;
+  font-family: pfdisplay-Bold;
+  color: $color-orange;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  background-color: #fff;
+  white-space: nowrap;
+}

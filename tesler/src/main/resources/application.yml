@@ -1,0 +1,171 @@
+app:
+  ui-path: /ui
+  backoffice:
+    keycloak:
+      realm: tesler
+      auth-server-url: http://localhost:9080/auth
+      resource: tesler-keycloak-client
+      ssl-require: none
+      public-client: true
+      cors: true
+  shorturl:
+    teslerUrl: http://localhost:8080/
+    portalUrl: http://localhost:3000/
+    redirectUrl: api/v1/shortUrl/
+  mail:
+    from: esmSystemDiplom@gmail.com
+    picture-directory: file:./tesler/src/main/resources/mail/picture
+    batch-size: 100
+
+tesler:
+  bean:
+    multipart-resolver:
+      enabled: false
+  meta:
+    dev-panel-enabled: true
+    directory: file:./tesler/src/main/resources/meta
+    view-allowed-roles-enabled: true
+  widget:
+    fields:
+      include-packages: io.tesler.core.ui.model.json.field.subtypes, io.demo.conf.tesler.meta
+  api:
+    path: /api/v1
+    use-servlet-context-path: false
+  ui:
+    path: /ui
+    use-servlet-context-path: false
+
+server:
+  port : 8080
+  forward-headers-strategy: framework
+  servlet:
+    session:
+      cookie:
+        http-only: true
+  max-http-header-size: 1MB
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: -1
+      max-request-size: -1
+  datasource:
+    name: primaryDS
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+  liquibase:
+    change-log: classpath:/db/db.changelog-master.xml
+  jpa:
+    properties:
+      hibernate:
+        synonyms: true
+        default_batch_fetch_size: 100
+        order_updates: true
+        order_inserts: true
+        batch_versioned_data: true
+        batch_fetch_style: DYNAMIC
+        criteria:
+          literal_handling_mode: BIND
+        connection:
+          includeSynonyms: true
+          charSet: UTF-8
+        jdbc:
+          batch_size: 100
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
+        physical-strategy: io.tesler.model.core.hbn.ImprovedPhysicalNamingStrategy
+  main:
+    allow-bean-definition-overriding: true
+    banner-mode: off
+  thymeleaf:
+    enabled: false
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+    prefix: file:./tesler/src/main/resources/mail/html/
+    cache: false
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: esmSystemDiplom@gmail.com
+    password: hqlwajtfgelaoecw
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.smtp.starttls.required: true
+    test-connection: true
+  session:
+    store-type: jdbc
+
+keycloak:
+  auth-server-url: http://localhost:9080/auth
+  realm: tesler
+  resource: tesler-keycloak-client
+  bearer-only: true
+  public-client: true
+  use-resource-role-mappings: true
+  ssl-required: none
+  disable-trust-manager: true
+
+management:
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+springdoc:
+  packages-to-scan: io.demo.controller
+  api-docs:
+    enabled: true
+  swagger-ui:
+    path: /esm-swagger.html
+
+
+minio:
+  access:
+    name: 4eb6a7db8b58994ea61b
+    secret: prCv8t9LGRH18FB5pLr5jqDZ/dixZkb9cFajueGW
+  url: http://localhost:9000
+  bucket:
+    name: esmminiobucket
+  tempbucket:
+    name: esmminiotempbucket
+
+camunda:
+  bpm:
+    admin-user:
+      id: demo
+      password: demo
+      first-name: demo
+    filter:
+      create: All tasks
+    webapp:
+      application-path: /camunda
+
+logbook:
+  include:
+    - /**
+  exclude:
+    - /api/v1/chat/**
+    - /ui/**
+    - /swagger-ui/**
+    - /v3/api-docs/**
+    - /api/v1/data/**
+    - /api/v1/row-meta/**
+    - /api/v1/count/**
+    - /api/v1/login/**
+  filter:
+    enabled: true
+  format:
+    style: http
+  write:
+    max-body-size: -1

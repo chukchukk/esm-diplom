@@ -1,0 +1,56 @@
+{
+  "name": "requestListNew",
+  "title": "Новые",
+  "template": "DashboardView",
+  "url": "/screen/requests/view/requestListNew",
+  "widgets": [
+    {
+      "widgetName": "FirstLevelNavigationTabs",
+      "position": 0,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestListHeader",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestListNew",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "addCommentFormRequestListNew",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "addReasonFormCancelRequestListNew",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "rejectRequestListNew",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "solutionDeadlineChangeRequestListNew",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "implementerPickListPopupRequestListNew",
+      "position": 10,
+      "gridWidth": 24,
+      "hidden": true
+    }
+  ],
+  "rolesAllowed": [
+    "HEAD_IMPLEMENTER","IMPLEMENTER"
+  ]
+}

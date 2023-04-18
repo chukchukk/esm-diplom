@@ -1,0 +1,22 @@
+{
+  "name": "addImplementer",
+  "title": "Все заявки",
+  "template": "DashboardView",
+  "url": "/screen/requests/view/addImplementer",
+  "widgets": [
+    {
+      "widgetName": "addImplementerForm",
+      "position": 0,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "implementerPickListPopupRequestForm",
+      "position": 1,
+      "gridWidth": 24,
+      "hidden": true
+    }
+  ],
+  "rolesAllowed": [
+    "HEAD_IMPLEMENTER"
+  ]
+}

@@ -1,0 +1,47 @@
+@import 'src/styles/variables';
+
+.inputInstance {
+    color: $color-dark;
+    font-family: pfdisplay-Light;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    border: none;
+    padding: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.dateWrapper {
+    position: relative;
+}
+
+.placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 30px;
+    bottom: 0;
+
+    font-family: pfdisplay-Light;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    color: $color-grey-blue;
+
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+}
+
+@-moz-document url-prefix() {
+    .firefoxInput {
+        position: relative;
+        &:before {
+            content: url("../../../../assets/icons/calendar.svg");
+            position: absolute;
+            right: 3px;
+            top: 3px;
+        }
+    }
+}

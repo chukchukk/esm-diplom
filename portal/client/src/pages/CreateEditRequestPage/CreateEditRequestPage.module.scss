@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.formInstance {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.mainColumn {
+}
+
+.requestFormButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.selectInstance {
+
+  color: $color-dark;
+  font-family: pfdisplay-Regular;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  border: none;
+  padding: 0;
+  width: 100%;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:disabled {
+    color: $color-pale-grey;
+  }
+}

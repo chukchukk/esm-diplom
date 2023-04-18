@@ -1,0 +1,28 @@
+@import "../../../styles/variables";
+
+.wrapper {
+  position: relative;
+}
+
+.content {
+  border: 1px solid $color-pale_grey_two;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: -50%;
+  bottom: calc(100% + 5px);
+  background-color: #FFFFFF;
+  padding: 9px 6px 9px 18px;
+  box-shadow: 0 3px 10px rgba(42, 43, 55, 0.05);
+}
+
+.wrapper:hover .content {
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.disabled {
+  pointer-events: none;
+}

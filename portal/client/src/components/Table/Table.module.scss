@@ -1,0 +1,65 @@
+@import "../../assets/fonts/fonts.module.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/common.scss";
+
+.downArrow {
+  transform: rotate(180deg);
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0px;
+
+  .thContainer {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  thead {
+    th {
+      font-family: pfdisplay-Regular !important;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19.2px;
+      letter-spacing: 0.35px;
+      color: black;
+      opacity: 0.5;
+      border-bottom: 11px solid $color-background;
+
+      .sortIcon {
+        display: flex;
+        color: $color-pale-grey;
+        margin-left: 5px;
+        opacity: 1;
+      }
+    }
+    th:first-child {
+      padding-left: 31px;
+    }
+    th + th {
+      padding-left: 15px;
+    }
+  }
+  tbody {
+    td {
+      font-family: pfdisplay-Medium;
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 0.3px;
+      color: $color-dark;
+      height: 80px;
+      border: none;
+      border-bottom: 21px solid $color-background !important;
+      background: white;
+    }
+    tr {
+      cursor: pointer;
+      td:first-child {
+        padding-left: 31px;
+      }
+      td + td {
+        padding-left: 15px;
+      }
+    }
+  }
+}

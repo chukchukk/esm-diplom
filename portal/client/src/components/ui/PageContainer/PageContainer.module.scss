@@ -1,0 +1,33 @@
+.title {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 400;
+  font-family: pfdisplay-Regular;
+  color: #fff;
+
+  display: block;
+  margin-bottom: 31px;
+
+}
+
+.requestContainer {
+  padding-top: 38px;
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 22px;
+}
+
+.mainColumn {
+  flex-basis: 80%;
+
+  background: #fff;
+
+  padding: 24px 0 37px 29px ;
+}
+
+.secondaryColumn {
+  display: flex;
+}

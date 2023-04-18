@@ -1,0 +1,31 @@
+{
+  "name": "rejectRequest",
+  "title": "Причина отклонения",
+  "type": "FormPopup",
+  "bc": "rejectRequest",
+  "fields": [
+    {
+      "label": "",
+      "key": "rejectComment",
+      "type": "text"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "rejectComment",
+              "span": 24
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

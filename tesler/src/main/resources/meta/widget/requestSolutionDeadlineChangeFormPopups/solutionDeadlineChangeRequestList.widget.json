@@ -1,0 +1,44 @@
+{
+  "name": "solutionDeadlineChangeRequestList",
+  "title": "Смена срока исполнения",
+  "type": "FormPopup",
+  "bc": "solutionDeadlineChangeRequestList",
+  "fields": [
+    {
+      "label": "Новый срок исполнения",
+      "key": "newActualDeadline",
+      "type": "date"
+    },
+    {
+      "label": "Причина переноса",
+      "key": "newActualDeadlineComment",
+      "type": "text"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "newActualDeadline",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "newActualDeadlineComment",
+              "span": 24
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

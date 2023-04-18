@@ -1,0 +1,37 @@
+{
+  "name": "requestFiles",
+  "title": "Файлы",
+  "type": "List",
+  "bc": "requestFiles",
+  "fields": [
+    {
+      "title": "fileId",
+      "key": "fileId",
+      "type": "hidden"
+    },
+    {
+      "title": "Файл",
+      "key": "fileName",
+      "type": "fileUpload",
+      "fileIdKey": "fileId"
+    },
+    {
+      "title": "Дата прикрепления",
+      "key": "creationDate",
+      "type": "date"
+    },
+    {
+      "title": "Кем прикреплен",
+      "key": "createdBy",
+      "type": "text"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "actions",
+        "backToRequest"
+      ]
+    }
+  }
+}

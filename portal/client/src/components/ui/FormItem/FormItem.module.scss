@@ -1,0 +1,65 @@
+@import "../../../assets/fonts/fonts.module.scss";
+@import "../../../styles/variables.scss";
+
+.wrapper {
+  position: relative;
+  padding: 15px 11px 9px 13px;
+  border: 1px solid $color-grey-form-item;
+  border-radius: 3px;
+  min-height: 41px;
+  font-family: pfdisplay-Light;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: black;
+}
+.simple{
+  border: none;
+  padding: 0;
+  padding-top: 15px;
+  input {
+    width: fit-content;
+    border-bottom: 1px solid $color-grey;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+  }
+  .itemLabel{
+    left: 0px;
+  }
+}
+.error {
+  border: 2px solid $color-orange
+}
+
+.itemLabel {
+  background-color: $color-white;
+  padding: 0 2px;
+  font-family: pfdisplay-Regular;
+  color: $color-grey-blue;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.3px;
+  position: absolute;
+  left: 11px;
+  top: -6px;
+}
+.star {
+  color: $color-orange;
+  margin-left: 2px;
+}
+
+.right {
+  position: absolute;
+  right: -32px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.disable {
+  background: $color-disabled-background;
+  color: $color-grey-blue;
+
+  .itemLabel{
+    background-color: $color-white
+  }
+}

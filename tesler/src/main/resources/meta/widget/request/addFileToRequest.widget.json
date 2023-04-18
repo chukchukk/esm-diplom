@@ -1,0 +1,39 @@
+{
+  "name": "addFileToRequest",
+  "title": "Прикрепление файла",
+  "type": "FormPopup",
+  "bc": "addFileToRequest",
+  "fields": [
+    {
+      "label": "newFileId",
+      "key": "newFileId",
+      "type": "hidden"
+    },
+    {
+      "label": "Документ",
+      "key": "newFileName",
+      "type": "fileUpload",
+      "fileIdKey": "newFileId"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "saveUpdates",
+        "cancelUpdates"
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "newFileName",
+              "span": 24
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

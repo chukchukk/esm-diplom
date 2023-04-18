@@ -1,0 +1,606 @@
+{
+  "name": "requestOptionalInfo",
+  "title": "Параметры",
+  "type": "Info",
+  "bc": "requestOptional",
+  "fields": [
+    {
+      "blockId": "1",
+      "name": "Optional Info",
+      "fields": [
+        {
+          "label": "Тип заявки",
+          "key": "title",
+          "type": "input",
+          "hidden": true
+        },
+        {
+          "label": "Количество экземпляров",
+          "key": "numberOfCopies",
+          "type": "input"
+        },
+        {
+          "label": "Указывать зарплату",
+          "key": "showSalary",
+          "type": "input"
+        },
+        {
+          "label": "Место предоставления",
+          "key": "whereReference",
+          "type": "input"
+        },
+        {
+          "label": "Иное место предоставления",
+          "key": "whereReferenceOther",
+          "type": "input"
+        },
+        {
+          "label": "Дата начала поездки",
+          "key": "travelDateFrom",
+          "type": "date"
+        },
+        {
+          "label": "Дата окончания поездки",
+          "key": "travelDateTo",
+          "type": "date"
+        },
+        {
+          "label": "Фамилия и имя из заграничного паспорта",
+          "key": "fullNameForeignPassport",
+          "type": "input"
+        },
+        {
+          "label": "Бумажная версия",
+          "key": "paperCopy",
+          "type": "input"
+        },
+        {
+          "label": "Требуется доставка",
+          "key": "deliveryNeed",
+          "type": "input"
+        },
+        {
+          "label": "Адрес доставки",
+          "key": "deliveryAddress",
+          "type": "input"
+        },
+        {
+          "label": "Язык справки",
+          "key": "language",
+          "type": "input"
+        },
+        {
+          "label": "Период с",
+          "key": "periodFrom",
+          "type": "input"
+        },
+        {
+          "label": "Период по",
+          "key": "periodTo",
+          "type": "input"
+        },
+        {
+          "label": "ФИО ребенка",
+          "key": "nameOfChild",
+          "type": "input"
+        },
+        {
+          "label": "Дата рождения ребенка",
+          "key": "dateOfBirthChild",
+          "type": "date"
+        },
+        {
+          "label": "Срок доставки с",
+          "key": "deliveryTimeFrom",
+          "type": "dateTime"
+        },
+        {
+          "label": "Срок доставки по",
+          "key": "deliveryTimeOn",
+          "type": "dateTime"
+        },
+        {
+          "label": "Тип доставки",
+          "key": "deliveryType",
+          "type": "input"
+        },
+        {
+          "label": "Вид посылки",
+          "key": "parcelType",
+          "type": "input"
+        },
+        {
+          "label": "Организация получатель",
+          "key": "organization",
+          "type": "input"
+        },
+        {
+          "label": "Часы работы организации",
+          "key": "openingHours",
+          "type": "input"
+        },
+        {
+          "label": "Контактное лицо",
+          "key": "contactPerson",
+          "type": "input"
+        },
+        {
+          "label": "Контактный номер телефон",
+          "key": "contactNumber",
+          "type": "input"
+        },
+        {
+          "label": "Код проекта",
+          "key": "projectCode",
+          "type": "input"
+        },
+        {
+          "label": "Требуется скан подписи",
+          "key": "requiredScan",
+          "type": "input"
+        },
+        {
+          "label": "Посылка тяжелая",
+          "key": "heavyPackage",
+          "type": "input"
+        },
+        {
+          "label": "Нужна доверенность",
+          "key": "needPowerOfAttorney",
+          "type": "input"
+        },
+        {
+          "label": "Нужен пропуск",
+          "key": "needPass",
+          "type": "input"
+        },
+        {
+          "label": "Требуется подписание документов",
+          "key": "requiredSigning",
+          "type": "input"
+        },
+        {
+          "label": "Срочная доставка",
+          "key": "expressDelivery",
+          "type": "input"
+        },
+        {
+          "label": "Смена СНИЛС",
+          "key": "changeSnils",
+          "type": "input"
+        },
+        {
+          "label": "Смена фамилии в связи с заключением / расторжением брака",
+          "key": "marriageNameChange",
+          "type": "input"
+        },
+        {
+          "label": "Фактический адрес проживания совпадает с местом регистрации",
+          "key": "actualResidence",
+          "type": "input"
+        },
+        {
+          "label": "Регион",
+          "key": "region",
+          "type": "input"
+        },
+        {
+          "label": "Район",
+          "key": "district",
+          "type": "input"
+        },
+        {
+          "label": "Населенный пункт",
+          "key": "locality",
+          "type": "input"
+        },
+        {
+          "label": "Улица",
+          "key": "street",
+          "type": "input"
+        },
+        {
+          "label": "Дом",
+          "key": "house",
+          "type": "input"
+        },
+        {
+          "label": "Квартира",
+          "key": "flat",
+          "type": "input"
+        },
+        {
+          "label": "Номер телефона",
+          "key": "newPhoneNumber",
+          "type": "input"
+        },
+        {
+          "label": "Назначенный сотрудник",
+          "key": "fullUserName",
+          "type": "input"
+        },
+        {
+          "label": "Обоснование предоставления доступа к заявке",
+          "key": "justification",
+          "type": "input"
+        },
+        {
+          "label": "Согласовано руководителем",
+          "key": "agreedByTheHead",
+          "type": "input"
+        },
+        {
+          "label": "Руководитель",
+          "key": "supervisor",
+          "type": "input"
+        }
+      ]
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "expressDelivery",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "requiredSigning",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "needPass",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "needPowerOfAttorney",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "heavyPackage",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "requiredScan",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "projectCode",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "contactNumber",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "contactPerson",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "openingHours",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "organization",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "parcelType",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "deliveryType",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "deliveryTimeOn",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "deliveryTimeFrom",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "numberOfCopies",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "showSalary",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "whereReference",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "whereReferenceOther",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "travelDateTo",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "travelDateFrom",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "fullNameForeignPassport",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "paperCopy",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "deliveryNeed",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "deliveryAddress",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "language",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "periodFrom",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "periodTo",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "nameOfChild",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "dateOfBirthChild",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "changeSnils",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "marriageNameChange",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "actualResidence",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "region",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "district",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "locality",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "street",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "house",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "flat",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "newPhoneNumber",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "fullUserName",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "justification",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "agreedByTheHead",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "supervisor",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

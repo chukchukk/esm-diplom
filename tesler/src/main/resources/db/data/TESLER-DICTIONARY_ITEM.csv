@@ -1,0 +1,5 @@
+﻿ID;DICTIONARY_TYPE_ID;TYPE;KEY;VALUE;ACTIVE;DISPLAY_ORDER;DESCRIPTION
+"100";1;"INTERNAL_ROLE";"ADMIN";"Администратор";true;0;null
+"200";1;"INTERNAL_ROLE";"EMPLOYEE";"Работник";true;1;null
+"300";1;"INTERNAL_ROLE";"IMPLEMENTER";"Исполнитель";true;2;null
+"400";1;"INTERNAL_ROLE";"HEAD_IMPLEMENTER";"Руководитель группы исполнителей";true;3;null

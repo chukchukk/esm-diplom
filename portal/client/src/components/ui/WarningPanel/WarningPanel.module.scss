@@ -1,0 +1,24 @@
+@import "../../../styles/variables";
+@import "../../../assets/fonts/fonts.module";
+.container {
+  position: relative;
+  padding: 16px 22px 16px 42px;
+  border: 1px solid $color-orange;
+  border-radius: 3px;
+
+  &:before {
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    content: url("../../../assets/icons/attention.svg");
+  }
+}
+.title {
+  margin: 0;
+  font-family: PTSans-regular;
+  color: $color-orange;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 0.24px;
+  white-space: pre-line;
+}

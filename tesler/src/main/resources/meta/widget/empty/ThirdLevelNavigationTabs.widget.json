@@ -1,0 +1,9 @@
+{
+  "name": "ThirdLevelNavigationTabs",
+  "title": "",
+  "type": "NavigationTabs",
+  "fields": [],
+  "options": {
+    "navigationLevel": 3
+  }
+}

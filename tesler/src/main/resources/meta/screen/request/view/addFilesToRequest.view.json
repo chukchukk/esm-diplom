@@ -1,0 +1,16 @@
+{
+  "name": "addFilesToRequest",
+  "title": "Файлы",
+  "template": "DashboardView",
+  "url": "/screen/requests/view/addFilesToRequest",
+  "widgets": [
+    {
+      "widgetName": "addFilesToRequest",
+      "position": 0,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "HEAD_IMPLEMENTER", "IMPLEMENTER"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "requestListHeader",
+  "title": "Заявки",
+  "type": "HeaderWidget",
+  "bc": "request",
+  "fields": [],
+  "options": {}
+}

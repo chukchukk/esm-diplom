@@ -1,0 +1,63 @@
+{
+  "name": "needExtraInfoRequestList",
+  "title": "Требуется информация",
+  "type": "FormPopup",
+  "bc": "needExtraInfoRequestList",
+  "fields": [
+    {
+      "label": "Требуемая информация",
+      "key": "extraInfoComment",
+      "type": "text"
+    },
+    {
+      "label": "needInfoFileId",
+      "key": "needInfoFileId",
+      "type": "hidden"
+    },
+    {
+      "label": "Документ",
+      "key": "needInfoFileName",
+      "type": "fileUpload",
+      "fileIdKey": "needInfoFileId"
+    },
+    {
+      "label": "Требуется скан самостоятельно перевыпущенного СНИЛС",
+      "key": "snilsChangeBySelf",
+      "type": "checkbox"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "extraInfoComment",
+              "span": 24
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "needInfoFileName",
+              "span": 24
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "snilsChangeBySelf",
+              "span": 24
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

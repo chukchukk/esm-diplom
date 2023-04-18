@@ -1,0 +1,46 @@
+@import "../../../styles/variables.scss";
+
+.formInstance {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  margin-bottom: 44px;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-basis: 427px;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  flex-basis: 350px;
+}
+
+.checkboxes {
+  border: 1px solid $color-pale-gray;
+  border-radius: 3px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px 0 17px 20px;
+}
+
+.label {
+  font-family: pfdisplay-Medium;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.3px;
+  color: $color-grey-blue;
+}
+
+.requestFormButtons {
+  display: flex;
+  gap: 15px;
+}

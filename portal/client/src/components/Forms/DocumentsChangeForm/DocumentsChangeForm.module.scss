@@ -1,0 +1,76 @@
+@import "../../../styles/variables";
+@import "../../../assets/fonts/fonts.module";
+
+.formInstance {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+
+  max-width: 426px;
+  margin-bottom: 44px;
+}
+
+.lastNameChangeApplicationsPopover {
+  width: 211px;
+  font-family: "PTSans-regular", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+}
+
+.actionPanel {
+  font-family: "pfdisplay-Bold";
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+  color: $color-orange;
+  border: 1px solid $color-orange;
+  border-radius: 3px;
+
+  padding: 10px 16px;
+}
+
+.openModalButton {
+  text-decoration: underline dashed $color-orange;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.modalContent {
+  font-family: "PTSans-regular", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  color: $color-dark;
+}
+
+.list {
+  margin: 0;
+}
+
+.olList {
+  padding-inline-start: 15px;
+}
+
+.text {
+  margin-bottom: 0;
+}
+
+.checkboxInstance {
+  margin-right: 10px;
+}
+
+.checked {
+  &::before {
+    content: url("../../../assets/icons/selected.svg");
+  }
+}
+
+.unchecked {
+  &::before {
+    content: url("../../../assets/icons/notSelected.svg");
+  }
+}
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+}

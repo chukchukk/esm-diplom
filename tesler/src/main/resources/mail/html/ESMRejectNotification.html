@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<h2> Привет! </h2>
+<p> Ты оставлял(-а) заявку <a style="text-decoration: none;" href="#" th:href="${requestLink}" th:text="${requestType}"></a>
+</p>
+<p>
+  Твоя заявка была отклонена по причине:<br>
+    <p th:text="${reason}"/>
+</p>
+
+<span>
+    При возникновении вопросов обращайся к исполнителю или на почту системы:
+    <ul>
+        <li>
+            <a style="text-decoration: none; color: #005aa6;" href="#" th:text="${implementer}"></a>
+        </li>
+        <li>
+            <a style="text-decoration: none!important;" href="mailto:kerityryui@mail.ru">kerityryui@mail.ru</a>
+        </li>
+    </ul>
+</span>
+
+</body>
+</html>

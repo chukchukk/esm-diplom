@@ -1,0 +1,31 @@
+{
+  "name": "completeRequestList",
+  "title": "Комментарий к закрытию заявки",
+  "type": "FormPopup",
+  "bc": "completeRequestList",
+  "fields": [
+    {
+      "label": "",
+      "key": "completeComment",
+      "type": "text"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "completeComment",
+              "span": 24
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

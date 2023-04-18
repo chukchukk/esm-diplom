@@ -1,0 +1,7 @@
+{
+  "name": "requestInfoHeader",
+  "title": "Карточка заявки",
+  "type": "HeaderWidget",
+  "bc": "request",
+  "fields": []
+}

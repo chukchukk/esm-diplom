@@ -1,0 +1,7 @@
+{
+  "name": "requestEditHeader",
+  "title": "Создание заявки за сотрудника",
+  "type": "HeaderWidget",
+  "bc": "requestEdit",
+  "fields": []
+}

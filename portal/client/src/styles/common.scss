@@ -1,0 +1,72 @@
+@import '../assets/fonts/fonts.module.scss';
+@import './variables.scss';
+
+.button {
+    all: unset;
+    padding: 5px 30px;
+    font-family: 'pfdisplay-Bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    background-color: $color-orange;
+    border-radius: 20px;
+    border: 2px solid $color-orange;
+    min-height: 40px;
+    box-sizing: border-box;
+    &:hover {
+        cursor: pointer;
+    }
+    &:disabled {
+        background-color: $color-pale-grey;
+        border-color: $color-pale-grey;
+        cursor: not-allowed;
+    }
+}
+
+.cancelButton {
+    background-color: #fff;
+    color: $color-red;
+    border: 2px solid $color-red;
+}
+
+.cancelButtonSolid {
+    background-color: $color-red;
+    color: #fff;
+    border: 2px solid $color-red;
+}
+
+.primaryLink {
+    &:hover {
+        color: $color-orange;
+        cursor: pointer;
+    }
+    &Active {
+        color: $color-orange;
+    }
+}
+.secondaryLink {
+    color: $color-orange;
+    text-underline-offset: 5px;
+    text-decoration: underline dashed $color-orange;
+    text-decoration-thickness: 1px;
+    &:hover {
+        color: $color-orange;
+        cursor: pointer;
+    }
+    &Active {
+        color: $color-orange;
+    }
+}
+
+.statusItem {
+    padding: 1px 7px;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    font-family: pfdisplay-Regular;
+    font-weight: 500;
+    border-radius: 2px;
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 30px;
+}

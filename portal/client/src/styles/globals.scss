@@ -1,0 +1,104 @@
+@import '../assets/fonts/fonts.module.scss';
+@import './variables.scss';
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'pfdisplay-Regular';
+    font-weight: 300;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.imgContainer {
+    padding: 4px;
+    line-height: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    all: unset;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sectionInner {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.sectionOuterGradient {
+    background: linear-gradient(180deg, $color-orange 150px, #f2f6f8 0.1%, #f2f6f8 100%);
+    min-height: calc(100vh - (80px));
+}
+.sectionOuter {
+    background: #f2f6f8;
+    min-height: calc(100vh - (80px));
+}
+
+button {
+    all: unset;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+input {
+    -webkit-appearance: none;
+    outline: none;
+}
+
+input[type='date'] {
+    &::-webkit-calendar-picker-indicator {
+        background-image: url('../assets/icons/calendar.svg');
+    }
+}
+
+// ::-webkit-calendar-picker-indicator {
+//   background-image: url("../assets/icons/calendar.svg");
+// }
+// input[type="date"]::-webkit-calendar-picker-indicator {
+//   // background: transparent;
+//   bottom: 0;
+//   // color: transparent;
+//   cursor: pointer;
+//   height: auto;
+//   left: 0;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   width: auto;
+// }
+
+// input.picker[type="date"]::-webkit-calendar-picker-indicator {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   width: 100%;
+//   height: 100%;
+//   padding: 0;
+//   color: transparent;
+//   background: transparent;
+// }

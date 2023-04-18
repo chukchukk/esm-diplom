@@ -1,0 +1,26 @@
+{
+  "name": "requestListHeadImplementerExpiringDeadline",
+  "title": "С контрольным сроком",
+  "template": "DashboardView",
+  "url": "/screen/requests/view/requestListHeadImplementerExpiringDeadline",
+  "widgets": [
+    {
+      "widgetName": "FirstLevelNavigationTabs",
+      "position": 0,
+      "gridWidth": 4
+    },
+    {
+      "widgetName": "requestListHeader",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestListHeadImplementerExpiringDeadline",
+      "position": 2,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "HEAD_IMPLEMENTER"
+  ]
+}

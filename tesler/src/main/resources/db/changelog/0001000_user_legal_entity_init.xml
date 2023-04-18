@@ -1,0 +1,56 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"
+                   logicalFilePath="db/changelog/0001000_user_legal_entity_init.xml">
+
+    <changeSet id="init USER_LEGAL_ENTITY with BaseEntity fields " author="dponomarev">
+        <createTable tableName="USER_LEGAL_ENTITY">
+            <column defaultValueNumeric="1" name="CREATED_BY_USER_ID" type="NUMBER(19, 0)">
+                <constraints nullable="false" foreignKeyName="LEGAL_ENTITY_CREATED_BY" references="USERS(ID)"/>
+            </column>
+            <column defaultValueNumeric="1" name="LAST_UPD_BY_USER_ID" type="NUMBER(19, 0)">
+                <constraints nullable="false" foreignKeyName="LEGAL_ENTITY_LAST_UPD_BY" references="USERS(ID)"/>
+            </column>
+            <column name="ID" remarks="Identifier" type="NUMBER(19, 0)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column defaultValueComputed="current_timestamp" name="CREATED_DATE" remarks="Creation date"
+                    type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="current_timestamp" name="UPDATED_DATE" remarks="Last updated date"
+                    type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VSTAMP" type="NUMBER(19, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="add custom fields to USER_LEGAL_ENTITY" author="dponomarev">
+        <addColumn tableName="USER_LEGAL_ENTITY">
+            <column name="USER_ID" type="NUMBER(19, 0)">
+                <constraints nullable="false" foreignKeyName="USER_ID" references="USERS(ID)"/>
+            </column>
+            <column name="LEGAL_ENTITY_ID" type="NUMBER(19, 0)">
+                <constraints nullable="false" foreignKeyName="LEGAL_ENTITY_ID" references="LEGAL_ENTITY(ID)"/>
+            </column>
+            <column name="EMPLOYMENT_STATUS" type="VARCHAR(255)"/>
+            <column name="IS_DEFAULT" type="BOOLEAN"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="fill user_legal_entity" author="initial" runOnChange="true" context="local">
+        <loadUpdateData tableName="USER_LEGAL_ENTITY" primaryKey="ID" encoding="UTF-8" separator=";" quotchar="&quot;"
+                        file="db/data/USER_LEGAL_ENTITY.csv">
+            <column header="ID" name="ID" type="NUMERIC"/>
+            <column header="USER_ID" name="USER_ID" type="NUMERIC"/>
+            <column header="LEGAL_ENTITY_ID" name="LEGAL_ENTITY_ID" type="NUMERIC"/>
+            <column header="EMPLOYMENT_STATUS" name="EMPLOYMENT_STATUS" type="STRING"/>
+            <column header="IS_DEFAULT" name="IS_DEFAULT" type="NUMERIC"/>
+        </loadUpdateData>
+    </changeSet>
+
+</databaseChangeLog>

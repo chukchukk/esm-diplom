@@ -1,0 +1,16 @@
+{
+  "name": "implementerPickListPopupRequest",
+  "title": "Исполнители",
+  "type": "PickListPopup",
+  "bc": "implementerPickListPopupRequest",
+  "showCondition": [],
+  "fields": [
+    {
+      "title": "ФИО",
+      "key": "implementerName",
+      "type": "input"
+    }
+  ],
+  "axisFields": [],
+  "chart": []
+}

@@ -1,0 +1,16 @@
+{
+  "name": "requestOperations",
+  "title": "",
+  "type": "Form",
+  "bc": "request",
+  "fields": [],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "actions",
+        "openViewerList",
+        "openFilesView"
+      ]
+    }
+  }
+}

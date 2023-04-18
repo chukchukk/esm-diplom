@@ -1,0 +1,44 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"
+                   logicalFilePath="db/changelog/0001700_request_data_file_init.xml">
+
+    <changeSet id="init REQUEST_DATA_FILE with BaseEntity fields " author="dponomarev">
+        <createTable tableName="REQUEST_DATA_FILE">
+            <column defaultValueNumeric="1" name="CREATED_BY_USER_ID" type="NUMBER(19, 0)">
+                <constraints nullable="false" foreignKeyName="LEGAL_ENTITY_CREATED_BY" references="USERS(ID)"/>
+            </column>
+            <column defaultValueNumeric="1" name="LAST_UPD_BY_USER_ID" type="NUMBER(19, 0)">
+                <constraints nullable="false" foreignKeyName="LEGAL_ENTITY_LAST_UPD_BY" references="USERS(ID)"/>
+            </column>
+            <column name="ID" remarks="Identifier" type="NUMBER(19, 0)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column defaultValueComputed="current_timestamp" name="CREATED_DATE" remarks="Creation date"
+                    type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="current_timestamp" name="UPDATED_DATE" remarks="Last updated date"
+                    type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VSTAMP" type="NUMBER(19, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="add custom fields to REQUEST_DATA_FILE" author="dponomarev">
+        <addColumn tableName="REQUEST_DATA_FILE">
+            <column type="NUMBER(19, 0)" name="REQUEST_DATA_ID">
+                <constraints nullable="false" foreignKeyName="REQUEST_DATA_ID" references="REQUEST_DATA(ID)"/>
+            </column>
+            <column name="FILE_ID" type="VARCHAR(500)"/>
+            <column name="FILE_NAME" type="VARCHAR(500)"/>
+            <column name="ADDED_BY_EMPLOYEE" type="BOOLEAN"/>
+            <column name="ACTIVE" type="BOOLEAN"/>
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>

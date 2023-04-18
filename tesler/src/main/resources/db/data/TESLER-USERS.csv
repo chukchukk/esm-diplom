@@ -1,0 +1,7 @@
+﻿ID;FIRST_NAME;LAST_NAME;PATRONYMIC;LOGIN;PASSWORD;INTERNAL_ROLE_CD;USER_PRINCIPAL_NAME;PHONE;EMAIL;FULL_USER_NAME;TITLE;DEPT_ID;ORIG_DEPT_CODE;TIMEZONE;DN
+1;"User";"System";;"vanilla";;"ADMIN";"vanilla@localhost";;"vanilla@localhost";"System User";null;0;"DIT";null;null
+2;"Implementer";"NotMain";"Implementer";"IMPLEMENTER NOTMAIN";;"IMPLEMENTER";"Implementer NotMain";"79066833238";"implementer@local.com";"Implementer NotMain";"Исполнитель";0;null;null;213123
+3;"HeadImplementer";"Main";"HeadImplementer";"HEADIMPLEMENTER MAIN";;"HEAD_IMPLEMENTER";"HEADIMPLEMENTER MAIN";"79066833238";"head_implementer@local.com";"HEADIMPLEMENTER MAIN";"Главный исполнитель";0;null;null;2131943
+4;"SomeUser";"Ponomarev";"SomeUser";"SOMEUSER PONOMAREV";;"EMPLOYEE";"SOME USER";"79066833238";"some_user@local.com";"SOME USER";"Работник";0;null;null;66456
+
+

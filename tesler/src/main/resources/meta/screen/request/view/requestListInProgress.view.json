@@ -1,0 +1,74 @@
+{
+  "name": "requestListInProgress",
+  "title": "В работе",
+  "template": "DashboardView",
+  "url": "/screen/requests/view/requestListInProgress",
+  "widgets": [
+    {
+      "widgetName": "FirstLevelNavigationTabs",
+      "position": 0,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestListHeader",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestListInProgress",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "addCommentFormRequestListInProgress",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "addReasonFormCancelRequestListInProgress",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "completeRequestListInProgress",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "completeWithFileRequestListInProgress",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "rejectRequestListInProgress",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "needExtraInfoRequestListInProgress",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "solutionDeadlineChangeRequestListInProgress",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "implementerPickListPopupRequestListInProgress",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    }
+  ],
+  "rolesAllowed": [
+    "HEAD_IMPLEMENTER","IMPLEMENTER"
+  ]
+}

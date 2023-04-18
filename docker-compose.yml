@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+
+  tesler_postgres:
+    image: postgres:12.0
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    expose:
+      - 5432
+    ports:
+      - 5432:5432
+  tesler_minio:
+    image: bitnami/minio:2022.2.12
+    expose:
+      - 9000
+    ports:
+      - "9000:9000"
+    environment:
+      MINIO_ACCESS_KEY: esmminio
+      MINIO_SECRET_KEY: esmminio
+      MINIO_ROOT_USER: "4eb6a7db8b58994ea61b"
+      MINIO_ROOT_PASSWORD: "prCv8t9LGRH18FB5pLr5jqDZ/dixZkb9cFajueGW"
+      MINIO_DEFAULT_BUCKETS: "esmminiotempbucket,esmminiobucket"
+    restart: always
+  esmkeycloakpostgres:
+    image: postgres:12.0
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    expose:
+      - 5432
+    ports:
+      - 5434:5432
+  esmkeycloak:
+    image: jboss/keycloak:12.0.4
+    command:
+      [
+        '-b',
+        '0.0.0.0',
+        '-Dkeycloak.migration.action=import',
+        '-Dkeycloak.migration.provider=dir',
+        '-Dkeycloak.migration.dir=/opt/jboss/keycloak/realm-config',
+        '-Dkeycloak.migration.strategy=IGNORE_EXISTING',
+        '-Djboss.socket.binding.port-offset=1000',
+        '-Dkeycloak.profile.feature.upload_scripts=enabled'
+      ]
+    volumes:
+      - ./docker/keycloak-config:/opt/jboss/keycloak/realm-config
+      - ./.tmp/keycloak-db:/opt/jboss/keycloak/standalone/data
+    environment:
+      - PROXY_ADDRESS_FORWARDING=true
+      - DB_VENDOR=POSTGRES
+      - DB_ADDR=esmkeycloakpostgres
+      - DB_DATABASE=postgres
+      - DB_USER=postgres
+      - DB_SCHEMA=public
+      - DB_PASSWORD=postgres
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+    depends_on:
+      - esmkeycloakpostgres
+    ports:
+      - 9080:9080
+      - 9443:9443
+      - 10990:10990

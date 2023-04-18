@@ -1,0 +1,136 @@
+{
+  "name": "requestMainInfo",
+  "title": "Общая информация",
+  "type": "Info",
+  "bc": "request",
+  "fields": [
+    {
+      "blockId": "1",
+      "name": "General Information",
+      "fields": [
+        {
+          "label": "Автор",
+          "key": "author",
+          "type": "input"
+        },
+        {
+          "label": "Сотрудник",
+          "key": "employee",
+          "type": "input"
+        },
+        {
+          "label": "Юр. лицо",
+          "key": "legalEntityName",
+          "type": "input"
+        },
+        {
+          "label": "Тип заявки",
+          "key": "title",
+          "type": "input"
+        },
+        {
+          "label": "Регламентный срок",
+          "key": "plannedDeadline",
+          "type": "date"
+        },
+        {
+          "label": "Фактический срок",
+          "key": "actualDeadline",
+          "type": "date",
+          "bgColorKey": "deadlineColor"
+        },
+        {
+          "label": "Статус",
+          "key": "status",
+          "type": "dictionary",
+          "bgColorKey": "color"
+        },
+        {
+          "label": "Исполнитель",
+          "key": "implementer",
+          "type": "pickList",
+          "popupBcName": "implementerPickListPopupRequest",
+          "emptyLinkText": "Добавить...",
+          "pickMap": {
+            "implementer": "implementerName",
+            "implementerId": "id"
+          }
+        }
+      ]
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "author",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "employee",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "legalEntityName",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "title",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "plannedDeadline",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "actualDeadline",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "status",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "implementer",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

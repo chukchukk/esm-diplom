@@ -1,0 +1,18 @@
+@import "../../../../styles/variables";
+@import "../../../../assets/fonts/fonts.module";
+
+.content {
+  margin: 0;
+  font-family: PTSans-regular;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+  color: $color-grey-table;
+}
+
+.link {
+  color: $color-orange;
+  text-decoration: underline dashed;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"
+                   logicalFilePath="db/changelog/0002200_request_data_residence_address_fields.xml">
+
+    <changeSet id="add addreess fields to REQUEST_DATA" author="dponomarev">
+        <dropColumn tableName="REQUEST_DATA">
+            <column name="RESIDENCE_ADDRESS"/>
+        </dropColumn>
+        <addColumn tableName="REQUEST_DATA">
+            <column name="REGION" type="VARCHAR(255)"/>
+            <column name="DISTRICT" type="VARCHAR(255)"/>
+            <column name="LOCALITY" type="VARCHAR(255)"/>
+            <column name="STREET" type="VARCHAR(255)"/>
+            <column name="HOUSE" type="VARCHAR(255)"/>
+            <column name="FLAT" type="VARCHAR(255)"/>
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>

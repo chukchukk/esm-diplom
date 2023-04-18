@@ -1,0 +1,69 @@
+{
+  "name": "requestList",
+  "title": "",
+  "type": "List",
+  "bc": "requestList",
+  "fields": [
+    {
+      "title": "Заявка",
+      "key": "title",
+      "type": "dictionary",
+      "drillDown": "true"
+    },
+    {
+      "title": "Юр. лицо",
+      "key": "legalEntityName",
+      "type": "input"
+    },
+    {
+      "title": "Автор",
+      "key": "author",
+      "type": "input",
+      "drillDown": true
+    },
+    {
+      "title": "Сотрудник",
+      "key": "employee",
+      "type": "input",
+      "drillDown": true
+    },
+    {
+      "title": "Исполнитель",
+      "key": "implementer",
+      "type": "input",
+      "drillDown": true
+    },
+    {
+      "title": "Регламентный срок",
+      "key": "plannedDeadline",
+      "type": "date"
+    },
+    {
+      "title": "Фактический срок",
+      "key": "actualDeadline",
+      "type": "date",
+      "bgColorKey": "deadlineColor"
+    },
+    {
+      "title": "",
+      "key": "implementerId",
+      "type": "input",
+      "hidden": "true"
+    },
+    {
+      "title": "Статус",
+      "key": "status",
+      "type": "dictionary",
+      "bgColorKey": "color"
+    }
+  ],
+  "options": {
+    "filterDateByRange": true,
+    "actionGroups": {
+      "include": [
+        "actions"
+      ]
+    }
+  }
+}
+

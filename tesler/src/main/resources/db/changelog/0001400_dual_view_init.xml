@@ -1,0 +1,19 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"
+                   logicalFilePath="db/changelog/0001400_dual_view_init.xml">
+
+    <changeSet id="creating dualView view" author="dponomarev">
+        <sql>
+            CREATE VIEW dual_view AS
+            SELECT 1 AS LAST_UPD_BY_USER_ID,
+                   1 AS CREATED_BY_USER_ID,
+                   1 AS ID,
+                   now() as CREATED_DATE,
+                   now() as UPDATED_DATE,
+                   0 as VSTAMP;
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

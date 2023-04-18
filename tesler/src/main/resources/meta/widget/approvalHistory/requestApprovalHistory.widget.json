@@ -1,0 +1,40 @@
+{
+  "name": "requestApprovalHistory",
+  "title": "Жизненный цикл",
+  "type": "List",
+  "bc": "requestApprovalHistory",
+  "fields": [
+    {
+      "title": "Дата и время",
+      "key": "createdDate",
+      "type": "dateTime"
+    },
+    {
+      "title": "Тип действия",
+      "key": "actionType",
+      "type": "dictionary"
+    },
+    {
+      "title": "Автор действия",
+      "key": "actionAuthor",
+      "type": "dictionary"
+    },
+    {
+      "title": "Статус",
+      "key": "status",
+      "type": "dictionary",
+      "bgColorKey": "color"
+    },
+    {
+      "title": "Комментарий",
+      "key": "comment",
+      "type": "input"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+      ]
+    }
+  }
+}

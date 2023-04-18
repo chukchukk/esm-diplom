@@ -1,0 +1,27 @@
+@import '../../../assets/fonts/fonts.module.scss';
+@import '../../../styles/variables.scss';
+.item {
+    display: flex;
+    column-gap: 142px;
+
+    h3,
+    p {
+        flex-basis: 35%;
+        font-size: 18px;
+        line-height: 15px;
+        letter-spacing: 0.5px;
+    }
+    h3 {
+        color: $color-grey-blue;
+        font-family: museoSans_bold;
+    }
+    p {
+        font-family: pfdisplay-Medium;
+        color: black;
+        margin: 0;
+    }
+}
+
+.item + .item {
+    margin-top: 29px;
+}

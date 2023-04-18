@@ -1,0 +1,31 @@
+@import "src/styles/variables";
+
+.instance {
+  margin-right: 10px;
+}
+
+.checked {
+  &::before {
+    content: url("../../../../assets/icons/selected.svg");
+  }
+}
+
+.unchecked {
+  &::before {
+    content: url("../../../../assets/icons/notSelected.svg");
+  }
+}
+.label {
+  display: flex;
+  align-items: center;
+
+  font-family: pfdisplay-Regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-dark;
+  letter-spacing: 0.3px;
+}
+
+.disabled {
+  color: $color-pale-grey;
+}

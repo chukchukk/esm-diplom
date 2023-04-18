@@ -1,0 +1,21 @@
+{
+  "name": "requestFiles",
+  "title": "Файлы",
+  "template": "DashboardView",
+  "url": "/screen/requests/view/requestFiles",
+  "widgets": [
+    {
+      "widgetName": "FirstLevelNavigationTabs",
+      "position": 0,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestFiles",
+      "position": 1,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "HEAD_IMPLEMENTER", "IMPLEMENTER"
+  ]
+}

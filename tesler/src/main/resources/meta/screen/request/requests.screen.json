@@ -1,0 +1,51 @@
+{
+  "name": "requests",
+  "icon": "calendar",
+  "order": 0,
+  "title": "Заявки",
+  "primaryViewName": "requestList",
+  "navigation": {
+    "menu": [
+      {
+        "title": "Все заявки",
+        "viewName": "requestList"
+      },
+      {
+        "title": "Новые",
+        "viewName": "requestListNew"
+      },
+      {
+        "title": "В работе",
+        "viewName": "requestListInProgress"
+      },
+      {
+        "title": "Терминальные",
+        "viewName": "requestListArchive"
+      },
+      {
+        "viewName": "requestInfo",
+        "hidden": true
+      },
+      {
+        "viewName": "requestFiles",
+        "hidden": true
+      },
+      {
+        "viewName": "addFilesToRequest",
+        "hidden": true
+      },
+      {
+        "viewName": "requestListImplementerExpiringDeadline",
+        "hidden": true
+      },
+      {
+        "viewName": "requestListHeadImplementerExpiringDeadline",
+        "hidden": true
+      },
+      {
+        "viewName": "addImplementer",
+        "hidden": true
+      }
+    ]
+  }
+}

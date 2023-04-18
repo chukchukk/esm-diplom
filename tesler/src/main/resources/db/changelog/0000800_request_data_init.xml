@@ -1,0 +1,98 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"
+                   logicalFilePath="db/changelog/0000800_request_data_init.xml">
+
+    <changeSet id="init REQUEST_DATA with BaseEntity fields " author="dponomarev">
+        <createTable tableName="REQUEST_DATA">
+            <column defaultValueNumeric="1" name="CREATED_BY_USER_ID" type="NUMBER(19, 0)">
+                <constraints nullable="false" foreignKeyName="LEGAL_ENTITY_CREATED_BY" references="USERS(ID)"/>
+            </column>
+            <column defaultValueNumeric="1" name="LAST_UPD_BY_USER_ID" type="NUMBER(19, 0)">
+                <constraints nullable="false" foreignKeyName="LEGAL_ENTITY_LAST_UPD_BY" references="USERS(ID)"/>
+            </column>
+            <column name="ID" remarks="Identifier" type="NUMBER(19, 0)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column defaultValueComputed="current_timestamp" name="CREATED_DATE" remarks="Creation date"
+                    type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="current_timestamp" name="UPDATED_DATE" remarks="Last updated date"
+                    type="TIMESTAMP(6)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="VSTAMP" type="NUMBER(19, 0)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="add custom fields to REQUEST_DATA" author="dponomarev">
+        <addColumn tableName="REQUEST_DATA">
+            <column name="USER_ID" type="NUMBER(19, 0)">
+                <constraints foreignKeyName="USER_ID" referencedColumnNames="USERS(ID)"/>
+            </column>
+            <column name="TYPE" type="VARCHAR(255)"/>
+            <column name="STATUS" type="VARCHAR(255)"/>
+            <column name="COMPANY_ID" type="NUMBER(19, 0)">
+                <constraints foreignKeyName="COMPANY_ID" referencedColumnNames="LEGAL_ENTITY(ID)"/>
+            </column>
+            <column name="IMPLEMENTER_ID" type="NUMBER(19, 0)" remarks="Исполнитель">
+                <constraints foreignKeyName="IMPLEMENTER_ID" referencedColumnNames="USERS(ID)" nullable="true"/>
+            </column>
+            <column name="PLANNED_DEADLINE" remarks="Регламентный срок" type="DATE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ACTUAL_DEADLINE" remarks="Фактический срок" type="DATE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="COMMENT" type="VARCHAR"/>
+            <column name="PAPER_COPY" type="BOOLEAN"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="add custom fields to REQUEST_DATA by types" author="dponomarev">
+        <addColumn tableName="REQUEST_DATA">
+            <column name="NUMBER_OF_COPIES" type="NUMERIC(19, 0)" remarks="Количество экземпляров"/>
+            <column name="SHOW_SALARY" type="BOOLEAN" remarks="Указывать ли зарплату"/>
+            <column name="WHERE_REFERENCE" type="VARCHAR(1000)" remarks="Место предоставления"/>
+            <column name="DELIVERY_NEED" type="BOOLEAN" remarks="Требуется доставка"/>
+            <column name="DELIVERY_ADDRESS" type="VARCHAR(1000)" beforeColumn="Адрес доставки"/>
+            <column name="LANGUAGE" type="VARCHAR(1000)" remarks="Язык справки"/>
+            <column name="PERIOD_FROM" type="VARCHAR(255)" remarks="Период с"/>
+            <column name="PERIOD_TO" type="VARCHAR(255)" remarks="Период по"/>
+            <column name="PURPOSE_TEXT" type="VARCHAR(1000)" remarks="Цель получения"/>
+            <column name="NAME_OF_CHILD" type="VARCHAR(1000)" remarks="ФИО ребенка"/>
+            <column name="DATE_OF_BIRTH_CHILD" type="DATE" remarks="Дата рождения ребенка"/>
+            <column name="CHANGE_SNILS" type="VARCHAR(1000)" remarks="Смена СНИЛС"/>
+            <column name="MARRIAGE_NAME_CHANGE" type="BOOLEAN" remarks="Смена фамилии"/>
+            <column name="ACTUAL_RESIDENCE" type="BOOLEAN" remarks="Фактический адрес проживания совпадает с местом регистрации"/>
+            <column name="RESIDENCE_ADDRESS" type="VARCHAR(1000)" remarks="Фактический адрес проживания"/>
+            <column name="NEW_PHONE_NUMBER" type="VARCHAR(1000)" remarks="Номер телефона"/>
+            <column name="SNILS_CHANGE_BY_SELF" type="BOOLEAN" remarks=""/>
+            <column name="FULL_USER_NAME" type="VARCHAR(1000)" remarks="Назначенный сотрудник"/>
+            <column name="JUSTIFICATION" type="VARCHAR(1000)" remarks="Обоснование предоставления доступа к заявке"/>
+            <column name="AGREED_BY_THE_HEAD" type="BOOLEAN" remarks="Согласовано руководителем"/>
+            <column name="SUPERVISOR" type="VARCHAR(1000)" remarks="Руководитель"/>
+
+            <column name="DELIVERY_TIME_FROM" type="TIMESTAMP(6)" />
+            <column name="DELIVERY_TIME_ON" type="TIMESTAMP(6)" />
+            <column name="DELIVERY_TYPE" type="VARCHAR(1000)" />
+            <column name="PARCEL_TYPE" type="VARCHAR(1000)" />
+            <column name="ORGANIZATION" type="VARCHAR(1000)" />
+            <column name="OPENING_HOURS" type="VARCHAR(1000)" />
+            <column name="CONTACT_PERSON" type="VARCHAR(1000)" />
+            <column name="CONTACT_NUMBER" type="VARCHAR(1000)" />
+            <column name="PROJECT_CODE" type="VARCHAR(1000)" />
+            <column name="EXPRESS_DELIVERY" type="BOOLEAN" />
+            <column name="HEAVY_PACKAGE" type="BOOLEAN" />
+            <column name="NEED_PASS" type="BOOLEAN" />
+            <column name="REQUIRED_SCAN" type="BOOLEAN" />
+            <column name="NEED_POWER_OF_ATTORNEY" type="BOOLEAN" />
+            <column name="REQUIRED_SIGNING" type="BOOLEAN" />
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>

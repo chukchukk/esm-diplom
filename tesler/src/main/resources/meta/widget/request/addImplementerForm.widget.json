@@ -1,0 +1,53 @@
+{
+  "name": "addImplementerForm",
+  "title": "Выбор исполнителя",
+  "type": "Form",
+  "bc": "addImplementerToRequest",
+  "fields": [
+    {
+      "title": "Исполнитель",
+      "key": "implementer",
+      "type": "pickList",
+      "popupBcName": "implementerPickListPopupRequestForm",
+      "emptyLinkText": "Добавить...",
+      "pickMap": {
+        "implementer": "implementerName",
+        "implementerId": "id"
+      }
+    },
+    {
+      "title": "",
+      "key": "implementerId",
+      "type": "input",
+      "hidden": "true"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "saveUpdates",
+        "cancelUpdates"
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "implementerId",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "implementer",
+              "span": 24
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

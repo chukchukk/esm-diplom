@@ -1,0 +1,89 @@
+{
+  "name": "requestInfo",
+  "title": "Заявка",
+  "template": "DashboardView",
+  "url": "/screen/requests/view/requestInfo",
+  "widgets": [
+    {
+      "widgetName": "FirstLevelNavigationTabs",
+      "position": 0,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestInfoHeader",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestOperations",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestMainInfo",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestOptionalInfo",
+      "position": 4,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestApprovalHistory",
+      "position": 5,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "implementerPickListPopupRequest",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "addCommentFormRequest",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "addReasonFormCancelRequest",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "completeRequest",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "completeWithFileRequest",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "rejectRequest",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "needExtraInfoRequest",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    },
+    {
+      "widgetName": "solutionDeadlineChangeRequest",
+      "position": 100,
+      "gridWidth": 24,
+      "hidden": true
+    }
+  ],
+  "rolesAllowed": [
+    "HEAD_IMPLEMENTER", "IMPLEMENTER"
+  ]
+}

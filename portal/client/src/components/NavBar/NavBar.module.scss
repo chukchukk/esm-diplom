@@ -1,0 +1,80 @@
+@import "../../assets/fonts/fonts.module.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/common.scss";
+
+.header {
+  display: flex;
+  padding: 15px 19px 15px 28px;
+  &Right {
+    display: flex;
+    margin-left: auto;
+  }
+  &Left {
+    display: flex;
+    margin-left: revert;
+  }
+  align-items: center;
+  img {
+    display: block;
+  }
+}
+
+.menuButton {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+  &Container {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    margin-left: 11px;
+    font-family: museoSans_bold;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.35px;
+    color: black;
+  }
+}
+
+.nav {
+  margin-left: 100px;
+  &Wrapper {
+    display: flex;
+    list-style-type: none;
+    &Item {
+      color: $color-dark;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &Item + &Item {
+      margin-left: 135px;
+    }
+  }
+  a {
+    @extend .primaryLink;
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  img + img {
+    margin-left: 38px;
+  }
+  img {
+    cursor: pointer;
+  }
+}
+

@@ -1,0 +1,26 @@
+{
+  "name": "requestListArchive",
+  "title": "Архив",
+  "template": "DashboardView",
+  "url": "/screen/requests/view/requestListArchive",
+  "widgets": [
+    {
+      "widgetName": "FirstLevelNavigationTabs",
+      "position": 0,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestListHeader",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "requestListArchive",
+      "position": 2,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "HEAD_IMPLEMENTER","IMPLEMENTER"
+  ]
+}
